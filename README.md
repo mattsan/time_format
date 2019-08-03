@@ -1,6 +1,18 @@
 # TimeFormat
 
-**TODO: Add description**
+Show all formatted a date/time value.
+
+```elixir
+~N[2019-08-09 01:02:03.456789]
+|> Timex.to_datetime("Asia/Tokyo")
+|> TimeFormat.format_all()
+```
+
+```elixir
+~N[2019-08-09 01:02:03.456789]
+|> Timex.to_datetime("Asia/Tokyo")
+|> TimeFormat.lformat_all("ja")
+```
 
 ## Installation
 
